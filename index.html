@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="al">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mobilje Teko</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" type="image.jpg" href="favicon.jpg">
+  <script src="https://kit.fontawesome.com/7d95cd1ec0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  /* styles.css */
+  .content {
+  background-image: url("images/background.jpg"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: 65%;
+  padding: 80px 0; 
+}
+
+
+/* Add a semi-transparent overlay */
+.content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity by modifying the last parameter */
+}
+
+
+</style>
+<body>
+
+<header class="header">
+  <a href="index.html">
+    <img class="logo" src="images/logo4.png" alt="Mobilje Teko logo" />
+  </a>
+</header>
+<header>
+  <nav class="navbar">
+      <a href="index.html"><mark style="background-color: #29283b; color: #ffffff;">Ballina</mark></a>
+      <a href="about.html">Rreth nesh</a>
+      <a href="shop-items.html">Katalogu</a>
+      <a href="location.html">Lokacioni</a>
+      <a href="contact.html">Kontakt</a>
+      <a href="facebook.html">Facebook</a>
+  </nav>
+</header>
+
+
+
+
+<div class="content">
+
+    <div class="hero">
+
+      <div class="hero-description">
+        <h2>Gilindera, Kuzhina, Komoda, Dyer, Dritare dhe Roleta</h2>
+        <p>Mobilje Teko since 1992</p>
+        
+      </div>
+      
+    </div>
+
+    <div id="data-container"></div>
+   
+  </div>
+ 
+
+ </section>
+
+ <button id="back-to-top" onclick="scrollToTop()">
+  <img class="button-image" src="images/on-top.png" alt="Shko lartë"/>
+</button>
+
+<footer class="footer">
+  <div class="container">
+   <div class="row">
+     <div class="footer-col">
+       <h4>Kompania</h4>
+       <ul>
+         <li><a href="index.html">Ballina</a></li>
+         <li><a href="about.html">Rreth nesh</a></li>
+         <li><a href="shop-items.html">Katalogu</a></li>
+         <li><a href="contact.html">Kontakt</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Kontakt</h4>
+       <ul>
+        <li><a href="contact.html#contact">Kontakt</a></li>
+        <li><a href="contact.html#email">Message us</a></li>
+        <li><a href="contact.html#location">Lokacioni</a></li> 
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Katalogu</h4>
+       <ul>
+         <li><a href="shop-items.html#railings">Gilindera</a></li>
+         <li><a href="shop-items.html#door">Dyer</a></li>
+         <li><a href="shop-items.html#roleta">Roleta</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Rrjetet sociale</h4>
+       <div class="social-links">
+         <a href="https://www.facebook.com/mobiljeteko/"><i class="fab fa-facebook-f"></i></a>
+         <a href="https://www.instagram.com/mobiljeteko/"><i class="fab fa-instagram"></i></a>
+         <a href="https://wa.me/+38970236232"><i class="fab fa-whatsapp"></i></a>
+        
+         
+       </div>
+     </div> 
+     <div class="footer-col">
+      <ul>
+          <li><a><i class="fa fa-clock"></i> E hënë - E shtunë: 09:00-18:00</a></li>
+          <li><a href="https://maps.app.goo.gl/5jiqescyHdwjAHqc7"><i class="fa fa-map-marker"></i> Hristijan Todorovski Karpos 18, Kumanovë</a></li>
+      </ul>
+     </div>
+   </div>
+</div>  
+<p class="copyright">
+  <i class="far fa-copyright" style="color: #bbbbbb;"></i> Mobilje Teko <span id="currentYear"></span>
+</p>
+</footer>
+
+ <script>
+ // Back to Top Button Script
+ window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top").style.display = "block";
+      } else {
+        document.getElementById("back-to-top").style.display = "none";
+      }
+    }
+
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+    
+    
+</body>
+</html>

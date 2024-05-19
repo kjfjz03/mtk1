@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="al">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Katalogu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7d95cd1ec0.js" crossorigin="anonymous"></script>
+  <style>
+    /* Style for the slider container */
+    .slider-container {
+      max-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Style for the slider images */
+    .slider-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      margin: 0%;
+      padding: 0%;
+    }
+
+    /* Style for the individual slides */
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Style for the navigation buttons */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #fff;
+      outline: none;
+    }
+
+    .prev-btn {
+      left: 10px;
+    }
+
+    .next-btn {
+      right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+<header class="header">
+  <a href="index.html">
+    <img class="logo" src="images/logo4.png" alt="Mobilje Teko logo" />
+  </a>
+</header>
+
+<nav class="navbar">
+  <a href="index.html">Ballina</a>
+  <a href="about.html">Rreth nesh</a>
+  <a href="shop-items.html"><mark style="background-color: #29283b; color: #ffffff;">Katalogu</mark></a>
+  <a href="location.html">Lokacioni</a>
+  <a href="contact.html">Kontakt</a>
+  <a href="facebook.html">Facebook</a>
+</nav>
+
+<section class="shop-items" id="shop-items">
+  <h2 class="section-title">Katalogu</h2>
+  <!-- Shop items content -->
+  <div class="about-images">
+    <a href="#railings">
+      <div class="about-images-item">
+        <h3>Gilindera</h3>
+        <img class="about-image" src="images/stairrailings.jpg" alt="Gilindera"/>
+      </div>
+    </a>
+    <a href="#door">
+      <div class="about-images-item">
+        <h3>Dyer dhe dritare</h3>
+        <img class="about-image" src="images/doorandwindows.JPG" alt="Tables"/>
+      </div>
+    </a>
+    <a href="#roleta">
+      <div class="about-images-item">
+        <h3>Roleta</h3>
+        <img class="about-image" src="images/roleta/shutters.JPG" alt="Tables"/>
+      </div>
+    </a>
+    <a href="#kitchen">
+      <div class="about-images-item">
+        <h3>Kuzhina</h3>
+        <img class="about-image" src="images/Kitchen/kitchen.JPG" alt="Tables"/>
+      </div>
+    </a>
+    <a href="#orman">
+      <div class="about-images-item">
+        <h3>Ormane</h3>
+        <img class="about-image" src="images/ormane/wardrobe.JPG" alt="Tables"/>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="railings" id="railings">
+  <h3 class="items-title">Gilindera</h3>
+  <div class="slider-container">
+    <div class="slider-images">
+      <div class="slide"><img src="images/gilindera/1.jpg" alt="1"></div>
+      <div class="slide"><img src="images/gilindera/2.jpg" alt="2"></div>
+      <div class="slide"><img src="images/gilindera/3.jpg" alt="3"></div>
+      <div class="slide"><img src="images/gilindera/4.jpg" alt="4"></div>
+      <div class="slide"><img src="images/gilindera/5.jpg" alt="5"></div>
+      <div class="slide"><img src="images/gilindera/6.jpg" alt="6"></div>
+      <div class="slide"><img src="images/gilindera/7.1.jpg" alt="7"></div>
+      <div class="slide"><img src="images/gilindera/8.jpg" alt="8"></div>
+      <div class="slide"><img src="images/gilindera/9.jpg" alt="9"></div>
+      <div class="slide"><img src="images/gilindera/10.jpg" alt="10"></div>
+      <!-- Add more slides as needed -->
+    </div>
+    <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+<div class="door" id="door">
+  <h3 class="items-title">Dyer dhe Dritare</h3>
+  <div class="slider-container">
+    <div class="slider-images">
+      <div class="slide"><img src="images/backgroundpic.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="images/logo2mt.PNG" alt="Image 2"></div>
+      <div class="slide"><img src="images/Logomt.PNG" alt="Image 3"></div>
+      <!-- Add more slides as needed -->
+    </div>
+    <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+<div class="roleta" id="roleta">
+  <h3 class="items-title">Roleta</h3>
+  <div class="slider-container">
+    <div class="slider-images">
+      <div class="slide"><img src="images/roleta/6.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="images/roleta/4.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="images/roleta/3.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="images/roleta/2.jpg" alt="Image 4"></div>
+      <div class="slide"><img src="images/roleta/11.jpg" alt="Image 2"></div>
+      <!-- Add more slides as needed -->
+    </div>
+    <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+<div class="kitchen" id="kitchen">
+  <h3 class="items-title">Kuzhina</h3>
+  <div class="slider-container">
+    <div class="slider-images">
+      <div class="slide"><img src="images/Kitchen/1.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="images/Kitchen/2.jpg" alt="Image 2"></div>
+      <!-- Add more slides as needed -->
+    </div>
+    <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+<div class="orman" id="orman">
+  <h3 class="items-title">Ormane</h3>
+  <div class="slider-container">
+    <div class="slider-images">
+      <div class="slide"><img src="images/ormane/1.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="images/ormane/2.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="images/ormane/3.jpg" alt="Image 3"></div>
+      <!-- Add more slides as needed -->
+    </div>
+    <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+<button id="back-to-top" onclick="scrollToTop()">
+  <img class="button-image" src="images/on-top.png" alt="Shko lartë"/>
+</button>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Kompania</h4>
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="about.html">Rreth nesh</a></li>
+          <li><a href="shop-items.html">Katalogu</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontaktet</h4>
+        <ul>
+          <li><a href="contact.html#contact">Kontakt</a></li>
+          <li><a href="contact.html#email">Message us</a></li>
+          <li><a href="contact.html#location">Lokacioni</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Katalogu</h4>
+        <ul>
+          <li><a href="#railings">Gilindera</a></li>
+          <li><a href="#door">Dyer</a></li>
+          <li><a href="#roleta">Roleta</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rrjetet sociale</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/mobiljeteko/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mobiljeteko/"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/+38970236232"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a><i class="fa fa-clock"></i> E hënë - E shtunë: 09:00-18:00</a></li>
+          <li><a href="https://maps.app.goo.gl/5jiqescyHdwjAHqc7"><i class="fa fa-map-marker"></i> Hristijan Todorovski Karpos 18, Kumanovë</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">
+    <i class="far fa-copyright" style="color: #ffffff;"></i> Mobilje Teko 2024 
+  </p>
+</footer>
+
+<script>
+  // JavaScript for manual image slider functionality
+  const sliders = document.querySelectorAll('.slider-images');
+
+  sliders.forEach((slider, index) => {
+    let slides = slider.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showSlide() {
+      slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide();
+    }
+
+    // Initialize sliders
+    showSlide();
+
+    // Add event listeners for each slider
+    let prevBtn = slider.parentElement.querySelector('.prev-btn');
+    let nextBtn = slider.parentElement.querySelector('.next-btn');
+
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+  });
+
+  // Back to Top Button Script
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("back-to-top").style.display = "block";
+    } else {
+      document.getElementById("back-to-top").style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</body>
+</html>

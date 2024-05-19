@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="al">
+<head>
+  <style>
+   .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000000; /* Adjust as needed */
+	padding: 2px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+  }
+  
+  .nav-button {
+	padding: 10px 20px; /* Adjust padding to increase/decrease button size */
+	margin: 0 10px; /* Adjust margin for space between buttons */
+	text-decoration: none;
+	color: white;
+	border: 1px solid #fff; /* Border style for buttons */
+	border-radius: 5px; /* Rounded corners */
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-button:hover {
+	background-color: #fff; /* Change background color on hover */
+	color: #000000; /* Change text color on hover */
+  }
+  
+.navbar {
+	background-color: #29283b; /* Adjust as needed */
+	color: rgb(0, 0, 0); /* Adjust text color as needed */
+	
+	
+	 /* Ensure the navbar stays above other content */
+  }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" onclick="refreshPage()" class="left-nav-button active-page">Ballina</a>
+        <a href="#about">Rreth nesh</a>
+        <a href="#shop-items">Katalogu</a>
+        <a href="#location">Lokacioni</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#facebook" class="right-nav-button">Facebook posts</a> 
+    </nav>
+
+</body>
+</html>
